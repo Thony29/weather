@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather_app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <h1>weather_app</h1>
+      <form action="#">
+        <input id="search" type="text" placeholder="search...." />
+        <br />
+        <button class="btn">submit</button>
+      </form>
+
+      <div class="info">
+        <div class="weather_main"></div>
+
+        <div class="icon_description">
+          <div class="weather_description"></div>
+          <img class="weather_icon" src="#" alt="" />
+        </div>
+        <div class="temprature">
+          <div class="feh feh_no_display" id="feh_click"><small>°F</small>
+            <div class="fahrenheit"><h2></h2></div>
+            
+          </div>
+
+          <div class="cel cel_no_display" id="cel_click"><small class="c">°C</small>
+            <div class="celcius"><h2></h2></div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="toggle">
+        <button onclick="feh_toggle()">fahrenheit celcius</button>
+      
+      </div>
+    </div>
+
+    
+  </body>
+</html>
